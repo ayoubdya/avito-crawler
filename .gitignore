@@ -1,4 +1,4 @@
-CSVs/*
+*.csv
 geckodriver.log
 geckodriver
 *.html
