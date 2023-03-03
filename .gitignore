@@ -1,0 +1,8 @@
+CSVs/*
+geckodriver.log
+geckodriver
+*.html
+*.ipynb
+venv/
+__pycache__/
+.ipynb_checkpoints/
