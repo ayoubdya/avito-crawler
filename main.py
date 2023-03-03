@@ -2,7 +2,8 @@ import pandas as pd
 from selenium.webdriver import Firefox
 from selenium.webdriver.firefox.options import Options
 from selenium.webdriver.common.by import By
-from constants import DEBUG, nextXPath
+from selenium.common.exceptions import NoSuchElementException
+from constants import DEBUG, nextButtonXPath
 from utils import parseData
 
 
@@ -23,7 +24,10 @@ class Crawler():
       currentData = parseData(html)
       print(len(currentData), f"items in page {page}") if DEBUG >= 1 else None
       self.data.extend(currentData)
-      next = self.browser.find_element(By.XPATH, nextXPath)
+      try:
+        next = self.browser.find_element(By.XPATH, nextButtonXPath)
+      except NoSuchElementException:
+        break
       print("self.browser.current_url", self.browser.current_url, "next.get_attribute('href')", next.get_attribute("href")) if DEBUG >= 2 else None
       if self.browser.current_url == next.get_attribute("href"):
         break
