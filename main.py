@@ -15,7 +15,6 @@ class Crawler():
     self.url = url
     self.options = Options()
     self.options.add_argument('-headless') if headless else None
-    # self.browser.get(url)
     self.data = []
 
   def crawl(self):
@@ -42,8 +41,8 @@ class Crawler():
 
   def saveData(self, filename):
     df = pd.DataFrame(self.data)
-    df.to_csv(f'CSVs/{filename}.csv', header=True, index=False)
-    print("Data saved successfully") if DEBUG >= 1 else None
+    df.to_csv(f'CSVs/{filename}.csv', index=False)
+    print("Data saved successfully")
 
 
 if __name__ == "__main__":
