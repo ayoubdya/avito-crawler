@@ -42,7 +42,7 @@ class Crawler():
   def saveData(self, filename):
     df = pd.DataFrame(self.data)
     df.to_csv(f'CSVs/{filename}.csv', index=False)
-    print("Data saved successfully")
+    print(f"Data saved successfully to CSVs/{filename}.csv")
 
 
 if __name__ == "__main__":

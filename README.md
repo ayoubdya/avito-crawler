@@ -1,6 +1,12 @@
-# avito-crawler
+# avito crawler
 
-### Saves avito.ma listings to a csv file
+### Simple script that saves avito.ma listings to a csv file.
+
+## Demo
+
+![](https://i.imgur.com/ThFlU3B.gif)
+
+## Installation
 
 ```bash
 git clone https://github.com/ayoubdya/avito-crawler.git
