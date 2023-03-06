@@ -4,7 +4,7 @@
 
 ## Demo
 
-![](https://i.imgur.com/ThFlU3B.gif)
+![](https://i.imgur.com/GDaMuVS.gif)
 
 ## Installation
 
