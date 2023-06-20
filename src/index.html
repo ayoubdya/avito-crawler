@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script type="module" src="index.js"></script>
+    <link rel="shortcut icon" href="#" />
+  </head>
+  <body>
+    <div class="container">
+      <form class="row g-3 my-2" id="form">
+        <div class="mb-3 col-auto">
+          <!-- <label for="exampleFormControlInput1" class="form-label">Email address</label> -->
+          <input
+            type="search"
+            class="form-control"
+            id="search"
+            name="search"
+            placeholder="search"
+          />
+        </div>
+        <div class="mb-3 col-auto">
+          <!-- <label for="exampleFormControlInput1" class="form-label">Email address</label> -->
+          <input
+            type="search"
+            class="form-control"
+            id="city"
+            name="city"
+            placeholder="city"
+          />
+        </div>
+        <div class="mb-3 input-group col-auto" style="width: 15%">
+          <span class="input-group-text">sort by</span>
+          <select
+            class="form-select"
+            aria-label="Default select example"
+            id="sortBy"
+            name="sortBy"
+          >
+            <option selected value="default">default</option>
+            <option value="price">price</option>
+            <option value="title">title</option>
+          </select>
+        </div>
+        <div class="form-check form-switch ms-1 py-0 my-4 col-auto">
+          <input
+            class="form-check-input"
+            type="checkbox"
+            role="switch"
+            id="isStore"
+            name="isStore"
+          />
+          <label class="form-check-label" for="isStore">Store</label>
+        </div>
+        <div class="form-check form-switch py-0 my-4 col-auto">
+          <input
+            class="form-check-input"
+            type="checkbox"
+            role="switch"
+            id="isDelivery"
+            name="isDelivery"
+          />
+          <label class="form-check-label" for="isDelivery">Delivery</label>
+        </div>
+        <button
+          type="submit"
+          class="btn btn-primary col-auto"
+          style="height: 50%"
+        >
+          Filter
+        </button>
+        <span class="col-auto ms-auto mt-auto" id="total"></span>
+      </form>
+      <ul class="list-group" id="list"></ul>
+    </div>
+  </body>
+</html>
