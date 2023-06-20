@@ -1,7 +1,6 @@
 *.csv
 geckodriver.log
 geckodriver
-*.html
 *.ipynb
 venv/
 __pycache__/
