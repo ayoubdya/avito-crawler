@@ -7,9 +7,10 @@ citySelector = "div:nth-child(2) > div:nth-child(2) > div:nth-child(2) > div:nth
 categorySelector = "div:nth-child(2) > div:nth-child(2) > p:nth-child(1)"
 durationSelector = "div:nth-child(2) > div:nth-child(2) > div:nth-child(2) > div:nth-child(1) > span:nth-child(2)"
 priceSelector = "div:nth-child(2) > div:nth-child(1) > div:nth-child(1) > span:nth-child(1)"
-storeSelector = "div:nth-last-child(2) > div > div[style*='width:19px;height:19px;background-color:rgba(242, 242, 242,0.2);border-radius:50px']"  # this is one was pain in the ass
 # isDeliverySelector = "div:nth-child(1) > div:nth-child(3) > span"
 isDeliverySelector = "div:nth-child(1) > div:nth-child(1) >  div:nth-child(2) > span"
+storeSelector = "div:nth-last-child(2) > div > div[style*='width:19px;height:19px;background-color:rgba(242, 242, 242,0.2);border-radius:50px']"  # this one was pain in the ass
+
 
 units = {
   "seconde": timedelta(seconds=1),
