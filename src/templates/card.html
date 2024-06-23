@@ -4,53 +4,60 @@
       <a href="{{%URL%}}">{{%TITLE%}}</a>
       <p class="ms-auto">{{%PRICE%}}</p>
     </div>
-    <div class="card-body">
-      <p class="card-text">{{%CATEGORY%}}</p>
-    </div>
-    <div class="card-body pt-1 pb-0 d-flex">
-      <p class="card-text">{{%CITY%}}</p>
-      <p class="card-text ms-auto">il y a {{%DURATION%}}</p>
-    </div>
-    <div class="d-flex mb-1">
-      <div class="ms-3 {{%STORE%}}">
-        <svg
-          class="av-icon"
-          height="19"
-          width="19"
-          viewBox="0 0 24 24"
-          xmlns="http://www.w3.org/2000/svg"
-          aria-labelledby="Store2FillTitleID"
-          style="
-            fill: rgb(252, 148, 45);
-            stroke: rgb(252, 148, 45);
-            stroke-width: 0;
-          "
-        >
-          <title id="Store2FillTitleID">Store</title>
-          <path
-            d="M22 20v2H2v-2h1v-6.758A4.496 4.496 0 011 9.5c0-.827.224-1.624.633-2.303L4.345 2.5a1 1 0 01.866-.5H18.79a1 1 0 01.866.5l2.702 4.682A4.496 4.496 0 0121 13.242V20h1zM5.789 4L3.356 8.213a2.5 2.5 0 004.466 2.216c.335-.837 1.52-.837 1.856 0a2.5 2.5 0 004.644 0c.335-.837 1.52-.837 1.856 0a2.5 2.5 0 104.457-2.232L18.21 4H5.79z"
-          ></path>
-        </svg>
+    <div class="d-flex">
+      <div id="image">
+        <img src="{{%IMAGE%}}" class="card-img-top" alt="{{%TITLE%}}" />
       </div>
-      <div class="ms-3 {{%ISDELIVERY%}}">
-        <svg
-          class="av-icon"
-          height="19"
-          width="19"
-          viewBox="0 0 147 116"
-          xmlns="http://www.w3.org/2000/svg"
-          aria-labelledby="Delivery2TitleID"
-          style="
-            fill: rgb(252, 148, 45);
-            stroke: rgb(252, 148, 45);
-            stroke-width: 0;
-          "
-        >
-          <title id="Delivery2TitleID">Delivery</title>
-          <path
-            d="M89.101.101l.362.112 54.851 21.91a3.086 3.086 0 011.908 2.534l.028.376v65.715c0 1.17-.627 2.229-1.602 2.758l-.334.167-2.424.948-1.671.668-7.466 2.98-.334.14-33.178 13.26-2.451.975-7.327 2.925a3.005 3.005 0 01-1.852.125l-.362-.125-54.837-21.896c-1.059-.418-1.783-1.406-1.922-2.535l-.028-.39v-1.727H9.152V75.093h21.31v-1.714H18.288V59.451h12.174v-1.713H0V43.809h30.462V25.033c0-1.156.627-2.214 1.616-2.758l.334-.153L87.249.212A2.923 2.923 0 0189.1.103zM36.563 32.736v11.073h6.1l-.014 9.388h1.755l-.014 6.254h10.447v13.928H44.39v1.714h1.31V89.02h-8.093l47.706 19.054v-55.88l-48.75-19.46zm103.586 0L99.241 48.5v56.442l19.584-7.828v-12.62l9.137-.013v-3.12h12.187V32.736zm-25.99-14.319l-.321.14-47.984 19.165 22.509 8.984 50.352-20.099-23.372-9.332a3.153 3.153 0 01-1.184 1.156v-.014zM88.363 6.494l-50.366 20.1 19.444 7.771 50.366-20.112-19.444-7.759z"
-          ></path>
-        </svg>
+      <div>
+        <div class="card-body">
+          <p class="card-text">{{%CATEGORY%}}</p>
+        </div>
+        <div class="card-body pt-1 pb-0 d-flex gap-5">
+          <p class="card-text">{{%CITY%}}</p>
+          <p class="card-text ms-auto">il y a {{%DURATION%}}</p>
+        </div>
+        <div class="d-flex mb-1">
+          <div class="ms-3 {{%STORE%}}">
+            <svg
+              class="av-icon"
+              height="19"
+              width="19"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+              aria-labelledby="Store2FillTitleID"
+              style="
+                fill: rgb(252, 148, 45);
+                stroke: rgb(252, 148, 45);
+                stroke-width: 0;
+              "
+            >
+              <title id="Store2FillTitleID">Store</title>
+              <path
+                d="M22 20v2H2v-2h1v-6.758A4.496 4.496 0 011 9.5c0-.827.224-1.624.633-2.303L4.345 2.5a1 1 0 01.866-.5H18.79a1 1 0 01.866.5l2.702 4.682A4.496 4.496 0 0121 13.242V20h1zM5.789 4L3.356 8.213a2.5 2.5 0 004.466 2.216c.335-.837 1.52-.837 1.856 0a2.5 2.5 0 004.644 0c.335-.837 1.52-.837 1.856 0a2.5 2.5 0 104.457-2.232L18.21 4H5.79z"
+              ></path>
+            </svg>
+          </div>
+          <div class="ms-3 {{%ISDELIVERY%}}">
+            <svg
+              class="av-icon"
+              height="19"
+              width="19"
+              viewBox="0 0 147 116"
+              xmlns="http://www.w3.org/2000/svg"
+              aria-labelledby="Delivery2TitleID"
+              style="
+                fill: rgb(252, 148, 45);
+                stroke: rgb(252, 148, 45);
+                stroke-width: 0;
+              "
+            >
+              <title id="Delivery2TitleID">Delivery</title>
+              <path
+                d="M89.101.101l.362.112 54.851 21.91a3.086 3.086 0 011.908 2.534l.028.376v65.715c0 1.17-.627 2.229-1.602 2.758l-.334.167-2.424.948-1.671.668-7.466 2.98-.334.14-33.178 13.26-2.451.975-7.327 2.925a3.005 3.005 0 01-1.852.125l-.362-.125-54.837-21.896c-1.059-.418-1.783-1.406-1.922-2.535l-.028-.39v-1.727H9.152V75.093h21.31v-1.714H18.288V59.451h12.174v-1.713H0V43.809h30.462V25.033c0-1.156.627-2.214 1.616-2.758l.334-.153L87.249.212A2.923 2.923 0 0189.1.103zM36.563 32.736v11.073h6.1l-.014 9.388h1.755l-.014 6.254h10.447v13.928H44.39v1.714h1.31V89.02h-8.093l47.706 19.054v-55.88l-48.75-19.46zm103.586 0L99.241 48.5v56.442l19.584-7.828v-12.62l9.137-.013v-3.12h12.187V32.736zm-25.99-14.319l-.321.14-47.984 19.165 22.509 8.984 50.352-20.099-23.372-9.332a3.153 3.153 0 01-1.184 1.156v-.014zM88.363 6.494l-50.366 20.1 19.444 7.771 50.366-20.112-19.444-7.759z"
+              ></path>
+            </svg>
+          </div>
+        </div>
       </div>
     </div>
   </div>

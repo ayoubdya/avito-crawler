@@ -1,4 +1,4 @@
-import dataJson from "./data.json" assert { type: "json" };
+const dataJson = await fetch("./data.json").then((response) => response.json());
 
 const replaceTemplate = (html, item) => {
   let output = html.replace(/{{%TITLE%}}/g, item.title);
@@ -11,6 +11,7 @@ const replaceTemplate = (html, item) => {
   output = output.replace(/{{%CATEGORY%}}/g, item.categoty);
   output = output.replace(/{{%DURATION%}}/g, item.duration);
   output = output.replace(/{{%POSTDATE%}}/g, item.postDate);
+  output = output.replace(/{{%IMAGE%}}/g, item.imageUrl);
   if (!item.store) output = output.replace(/{{%STORE%}}/g, "d-none");
   if (!item.isDelivery) output = output.replace(/{{%ISDELIVERY%}}/g, "d-none");
   return output;
