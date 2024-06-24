@@ -12,8 +12,8 @@ const replaceTemplate = (html, item) => {
   output = output.replace(/{{%DURATION%}}/g, item.duration);
   output = output.replace(/{{%POSTDATE%}}/g, item.postDate);
   output = output.replace(/{{%IMAGE%}}/g, item.imageUrl);
-  if (!item.store) output = output.replace(/{{%STORE%}}/g, "d-none");
-  if (!item.isDelivery) output = output.replace(/{{%ISDELIVERY%}}/g, "d-none");
+  if (!item.store) output = output.replace(/{{%STORE%}}/g, "hidden");
+  if (!item.isDelivery) output = output.replace(/{{%ISDELIVERY%}}/g, "hidden");
   return output;
 };
 
